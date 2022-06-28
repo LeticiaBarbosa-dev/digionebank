@@ -6,11 +6,14 @@ class Pessoa {
 
     private set
 
+    constructor()
+
+    fun pessoaInfo() = "$nome e $cpf"
+
 }
 
 fun main() {
     val leticia = Pessoa()
 
-    println(leticia.nome)
-    println(leticia.cpf)
+    println(leticia.pessoaInfo())
 }
